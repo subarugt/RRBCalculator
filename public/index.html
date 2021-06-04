@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator</title>
+    <meta
+      name="description"
+      content="RSA Retail Bonds Investment Calculator."
+    />
+    <meta
+      name="keywords"
+      content="retail bonds, investment calculator"
+    />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#f37021" />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Interest Calculator" />
+    <link rel="icon" sizes="192x192" href="android-chrome-192x192.png" />
+    <link rel="icon" sizes="512x512" href="android-chrome-512x512.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Interest Calculator" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+   <!--  Windows -->
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="mstile-150x150.png" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <!-- Pinned Tab -->
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f5711f" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Web Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+
+    <style>
+      .MuiGrid-item {
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+/*.MuiGrid-grid-xs-12 {
+  margin: 20px 0!important;
+}*/
+
+.MuiGrid-grid-xs-6 {
+  margin: 12px 0!important;
+}
+
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #f5711f !important;
+}
+
+/*.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #d73818 !important;
+}*/
+
+
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/*Hover colour for field borders*/
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #d73818 !important;
+}
+
+.MuiOutlinedInput-root:focus .MuiOutlinedInput-notchedOutline,
+.MuiOutlinedInput-root:focus:focus-visible .MuiOutlinedInput-notchedOutline {
+  border-color: #f5711f !important;
+}
+
+/*Aligning landingp-form in the centre*/
+.CompoundInterest-root-4 .MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3{
+  padding: 12px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.MuiFormLabelRoot.MuiFocused {
+  color:#d73818 !important;
+}
+
+.MuiPickersToolbar-toolbar {
+  background-color: #d73818 !important;
+}
+
+.MuiPickersDay-current {
+  color: #f5711f !important;
+  font-weight: 600;
+}
+.MuiPickersDay-daySelected {
+  color: #fff;
+  font-weight: 500;
+  background-color: #d73818 !important;
+}
+.MuiPickersDay-daySelected:hover {
+  background-color: #f5711f !important;
+}
+
+
+/*select*/
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+  background-color: rgba(245, 113, 0, 0.2) !important;
+}
+
+        
+    /* Calculator Icon */
+   /* *************************** */
+   .MuiPickersDay-daySelected .MuiIconButton-label p {
+      color: #ffffff !important;
+    }
+    .customHeightAdjuster {
+      height: 22px !important;
+    }
+    
+    
+
+/*Table*/
+/****** Target both table main headers in left column ******/
+.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-3 > .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6:first-child 
+  .MuiTableHead-root:first-child > .MuiTableRow-root.MuiTableRow-head:first-child > .MuiTableCell-head:first-child {
+    font-size: 12pt !important;
+    font-weight: bold !important;
+    color: #f5711f !important;
+    text-transform: uppercase;
+    padding:5px !important;
+    padding-top: 7px !important;
+    text-align: left !important;
+    border-bottom: 2px solid #f5711f;
+    padding-top: 39px !important;
+  }
+
+/*Table*/
+  /****** Column 1 ******/
+  main .MuiGrid-container .MuiGrid-root.MuiGrid-item:first-child 
+  
+    /****** Table 1 ******/
+    table.MuiTable-root:nth-child(1) 
+
+      /****** Data Row Select ******/
+      tbody.MuiTableBody-root:nth-child(1) 
+
+        /****** Heading ******/
+        .MuiTableCell-root.MuiTableCell-head{
+            margin-top: 100px !important;
+        }
+
+   /* Table GAP */
+   /* *************************** */
+    .tableGap {
+      height: 0px !important;;
+    }
+    .customHeightAdjuster {
+      height: 22px !important;
+    }
+
+
+  /*Table*/
+  /****** Column 1 ******/
+  main .MuiGrid-container .MuiGrid-root.MuiGrid-item:first-child 
+  
+    /****** Table 2 ******/
+    table.MuiTable-root:nth-child(2) 
+
+      /****** Heading Row Select 1 ******/
+      thead.MuiTableHead-root .MuiTableRow-head:nth-child(1) 
+
+        /****** Heading ******/
+        .MuiTableCell-root.MuiTableCell-head{
+            margin-top: 100px !important;
+        }
+  
+
+        .makeStyles-tableCellTotalBold-46:last-child {
+          background-color: #56e42b;
+        }
+    </style>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

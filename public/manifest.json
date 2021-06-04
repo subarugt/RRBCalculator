@@ -1,0 +1,22 @@
+{
+  "name": "Investment Calculator",
+  "short_name": "Calculator",
+  "description": "RSA Retail Bonds Investment Calculator.",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "theme_color": "#f5711f",
+  "background_color": "#e5e5e5",
+  "orientation": "any",
+  "display": "standalone"
+}
