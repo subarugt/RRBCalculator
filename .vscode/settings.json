@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/18b73942-c6b7-4bc0-9911-8253abad1ea8/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/treasury-retail-bonds-standalone-calculator-uat",
-    "appService.deploySubpath": "build"
+    "appService.deploySubpath": "build",
+    "appService.defaultWebAppToDeploy": "/subscriptions/18b73942-c6b7-4bc0-9911-8253abad1ea8/resourceGroups/rrb2021-calculator/providers/Microsoft.Web/sites/rrb2021-calc-uat"
 }
